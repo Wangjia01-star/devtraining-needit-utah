@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="83ef049583a12e1028c6c7e0deaad34e" extends="task" label="NeedIt01" max_length="40" name="x_58872_needit_needit01" type="collection">
         <element label="newfield01" max_length="100" name="newfield01" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Choice 2" label="New Choice" mandatory="true" max_length="40" name="u_choice_2" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+            </choice>
+        </element>
         <element default="2" label="newfield02" max_length="10" name="newfield02" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="New Choice" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
     </element>
 </database>
